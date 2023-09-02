@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      font-family:  'Rubik', sans-serif;
+    }
+    :root{
+      --Very-dark-blue: hsl(226, 43%, 10%);
+      --Pale-Blue: hsl(236, 100%, 87%);
+      --Violet-social: hsl(264, 64%, 52%);
+      --Desaturated-blue: hsl(235, 45%, 61%);
+      --Dark-blue: hsl(235, 46%, 20%);
+      --Very-dark-blue: hsl(226, 43%, 10%);
+      --Soft-blue-play: hsl(195, 74%, 62%);
+      --Blue: hsl(246, 80%, 60%);
+      --Soft-orange: hsl(43, 84%, 65%);
+      --Light-red-study: hsl(348, 100%, 68%);
+      --Light-red-work: hsl(15, 100%, 70%);
+      --Soft-orange-self-care: hsl(43, 84%, 65%);
+      --Lime-green-exercise: hsl(145, 58%, 55%);
+    }
+    body{
+      margin: 0;
+      padding: 0;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color:var(--Very-dark-blue) ;
+    }
+    .main{
+      color: white;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 5%;
+      grid-row-gap:5%;
+    }
+    .section_bg{
+      background: var(--Dark-blue);
+      border-radius: 8px;
+    }
+    .section_1{
+      grid-row:span 2;
+    }
+    .section_1__1{
+      padding: 10%;
+      background: var(--Blue);
+      border-radius: 10px;
+      height: 55%;
+    }
+    .section__1__image img{
+      border: 4px solid white;
+      border-radius: 100px;
+    }
+    span{
+      display: block;
+    }
+    .section__1__span_1{
+      font-size: 0.8rem;
+    }
+    .section__1_para{
+      margin-top: 20%;
+      margin-bottom: 10%;
+    }
+    .section__1__span_2{
+      font-size: 2rem;
+      font-weight: 300;
+    }
+    img{
+      width: 50px;
+      height: 50px;
+    }
+    .section_1_anchor{
+      padding: 10%;
+    }
+    .section_1_anchor a{
+      font-weight: 100;
+      display: block;
+      margin-top: 10%;
+      margin-bottom: 10%;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+    }
+    .section_1_anchor a:active,.section_1_anchor a:visited{
+      font-weight: 400;
+    }
+    .section_2{
+      border-radius: 10px  ;
+      background: var(--Light-red-work);
+    }
+    .section_2__para{
+      position: relative;
+      top:-5.4%;
+      background: var(--Dark-blue);
+      border-radius: 8px;
+      height: 90%;
+    }
+    .section__2__image{
+      border-radius: 10px  ;
+      display: flex;
+      justify-content: end;
+    }
+    .section__2__image img{
+      width: 30px;
+      height: 30px;
+      margin-right: 5%;
+    } 
+    .section__nav{
+      padding: 10%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .section__nav img{
+      width: 10%;
+      height: 10%;
+      align-self: center;
+    }
+    .header{
+      margin-top: 8%;
+      margin-left: 10%;
+      font-size: 2rem;
+      font-weight: 300;
+    }
+    .para{
+      font-size: 0.7rem;
+      padding: 10%;
+    }
+    .bg-so{
+      background-color: var(--Soft-orange-self-care);
+    }
+    .bg-voilent{
+      background-color: var(--Violet-social);
+    }
+    .bg-lime-green{
+      background: var(--Lime-green-exercise);
+    }
+    .bg-light-red{
+      background-color: var(--Light-red-study);
+    }
+    .bg-soft-blue{
+      background-color: var(--Soft-blue-play);
+    }
+    @media only screen and (max-width:990px) {
+        .main{
+          grid-template-columns: 1fr;
+          row-gap: 1%;
+          width: 80vw;
+        }
+        .section_1__1{
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          height: auto;
+        }
+        .section__1_para{
+          margin: 0;
+        } 
+        .section__1__span_2{
+          font-size: 1.4rem;
+        }
+        .section_1_anchor{
+          display: flex;
+          border-radius: 8px;
+          justify-content: space-evenly;
+          align-content: center;
+          padding: 5%;
+        }
+        .section_1_anchor a{
+          margin:0;
+        }
+        .section_2__para{
+          position: static;
+          height: auto;
+        }
+        .header{
+          margin-top: 1%;
+        }
+        .section__nav{
+          padding-top: 4%;
+          padding-bottom: 1%;
+        }
+        .flex{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10%;
+        }
+        .header{
+          margin: 0;
+        }
+        .para{
+          padding: 0;
+        }
+    }
